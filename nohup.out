@@ -1,0 +1,54 @@
+INFO     Using path main.py                                                                                                                                         
+INFO     Resolved absolute path /Users/imranmalik/www/testpy/main.py                                                                                                
+INFO     Searching for package file structure from directories with __init__.py files                                                                               
+INFO     Importing from /Users/imranmalik/www/testpy                                                                                                                
+                                                                                                                                                                    
+ ╭─ Python module file ─╮                                                                                                                                           
+ │                      │                                                                                                                                           
+ │  🐍 main.py          │                                                                                                                                           
+ │                      │                                                                                                                                           
+ ╰──────────────────────╯                                                                                                                                           
+                                                                                                                                                                    
+INFO     Importing module main                                                                                                                                      
+INFO     Found importable FastAPI app                                                                                                                               
+                                                                                                                                                                    
+ ╭─ Importable FastAPI app ─╮                                                                                                                                       
+ │                          │                                                                                                                                       
+ │  from main import app    │                                                                                                                                       
+ │                          │                                                                                                                                       
+ ╰──────────────────────────╯                                                                                                                                       
+                                                                                                                                                                    
+INFO     Using import string main:app                                                                                                                               
+                                                                                                                                                                    
+ ╭────────── FastAPI CLI - Development mode ───────────╮                                                                                                            
+ │                                                     │                                                                                                            
+ │  Serving at: http://127.0.0.1:2000                  │                                                                                                            
+ │                                                     │                                                                                                            
+ │  API docs: http://127.0.0.1:2000/docs               │                                                                                                            
+ │                                                     │                                                                                                            
+ │  Running in development mode, for production use:   │                                                                                                            
+ │                                                     │                                                                                                            
+ │  fastapi run                                        │                                                                                                            
+ │                                                     │                                                                                                            
+ ╰─────────────────────────────────────────────────────╯                                                                                                            
+                                                                                                                                                                    
+INFO:     Will watch for changes in these directories: ['/Users/imranmalik/www/testpy']
+INFO:     Uvicorn running on http://127.0.0.1:2000 (Press CTRL+C to quit)
+INFO:     Started reloader process [45976] using watchgod
+INFO:     Started server process [45978]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:60413 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60413 - "GET / HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Finished server process [45978]
+ERROR:    Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/starlette/routing.py", line 741, in lifespan
+    await receive()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/uvicorn/lifespan/on.py", line 135, in receive
+    return await self.receive_queue.get()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/asyncio/queues.py", line 166, in get
+    await getter
+asyncio.exceptions.CancelledError
+
+INFO:     Stopping reloader process [45976]
